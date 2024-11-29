@@ -1,10 +1,11 @@
 ## Expense tracker project using Python
 
 ## Requirements:
-- [ ] Collect user inputs to store expenses by category (e.g., Food, Travel, Entertainment).
-- [ ] Use dictionaries to organize expenses by category.
+- [x] Collect user inputs to store expenses by category (e.g., Food, Travel, Entertainment).
+- [x] Use dictionaries to organize expenses by category.
 - [ ] Implement functions to:
-    - [ ] Calculate the total and average expenses.
+    - [ ] Calculate the total expenses.
+    - [ ] Calculate the average expenses.
     - [ ] Display expenses by category.
 
 ## TODO on separate branch:
@@ -13,3 +14,4 @@
 - [ ] Fns for input, modify, fetch
 - [ ] Add graphs
 - [ ] containerize
+- [ ] Allow user to modify categories
