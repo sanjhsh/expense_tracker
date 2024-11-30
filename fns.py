@@ -56,8 +56,6 @@ def addExpense():
                 # converting all keys from dict `expenseCats` to a list
                 # then accessing category via index number
                 list(expenseCats.values())[selectedCategory-1].append(spentAmt)
-                # print(list(expenseCats.values())[selectedCategory-1])
-                # print(f"{expenseCats}\n")
 
 def avgExpense():
     finalSum_countElements=totalExpense()
