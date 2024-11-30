@@ -10,6 +10,24 @@ expenseCats = {
     "Misc" : []
 }
 
+demoDict = {
+    "One" : [1,23],
+    "Two" : [],
+    "Three" : [123],
+    "Four" : [500,69,420]
+}
+
+def totalExpense():
+    allExpenses=list(demoDict.values())[:]
+    print(f"\nAll expenses are \n{allExpenses}\n")
+    for i in range(len(allExpenses)):
+        for j in range(len(allExpenses[i])):
+            print(allExpenses[j])
+        # print(type(allExpenses[i]))
+        # print(i)
+        print(allExpenses[i])
+    # print(f"Sum of expenses is: {sumAll}")
+
 def addExpense():
     while True:
         print("\nPlease select an expense category:")
@@ -50,9 +68,6 @@ def addExpense():
                 list(expenseCats.values())[selectedCategory-1].append(spentAmt)
                 # print(list(expenseCats.values())[selectedCategory-1])
                 # print(f"{expenseCats}\n")
-
-def totalExpense():
-    pass
 
 def avgExpense():
     pass
