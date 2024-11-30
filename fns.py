@@ -10,23 +10,13 @@ expenseCats = {
     "Misc" : []
 }
 
-demoDict = {
-    "One" : [1,23],
-    "Two" : [],
-    "Three" : [123],
-    "Four" : [500,69,420]
-}
-
-def totalExpense():
-    allExpenses=list(demoDict.values())[:]
-    print(f"\nAll expenses are \n{allExpenses}\n")
-    for i in range(len(allExpenses)):
-        for j in range(len(allExpenses[i])):
-            print(allExpenses[j])
-        # print(type(allExpenses[i]))
-        # print(i)
-        print(allExpenses[i])
-    # print(f"Sum of expenses is: {sumAll}")
+# demoDict = {
+#     "One" : [99,23],
+#     "Two" : [],
+#     "Three" : [123.456],
+#     "Four" : [500,420,88.96],
+#     "Five" : [778]
+# }
 
 def addExpense():
     while True:
@@ -70,7 +60,21 @@ def addExpense():
                 # print(f"{expenseCats}\n")
 
 def avgExpense():
-    pass
+    finalSum_countElements=totalExpense()
+    avgAll=finalSum_countElements[0]/finalSum_countElements[1]
+    return avgAll
+
+def totalExpense():
+    allExpenses=list(expenseCats.values())[:]
+    sumAll=0
+    totalElements=0
+    for i in range(len(allExpenses)):
+        for j in range(len(allExpenses[i])):
+            totalElements+=1
+            sumAll=sumAll+allExpenses[i][j]
+    return [sumAll, totalElements]
 
 def displayExpense():
-    pass
+    print("\nExpenses per category are:")
+    for key, value in expenseCats.items():
+        print("{}: {}".format(key, value))
